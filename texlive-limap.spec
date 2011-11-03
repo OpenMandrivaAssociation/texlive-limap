@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/gene/limap
+# catalog-date 2007-01-08 23:14:30 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-limap
 Version:	20070108
 Release:	1
@@ -48,6 +54,7 @@ definitions to typeset a whole document.
 %doc %{_texmfdistdir}/source/latex/limap/Makefile
 %doc %{_texmfdistdir}/source/latex/limap/limap.dtx
 %doc %{_texmfdistdir}/source/latex/limap/limap.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ definitions to typeset a whole document.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
