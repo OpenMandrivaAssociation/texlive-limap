@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-limap
 Version:	20070108
-Release:	9
+Release:	10
 Summary:	Typeset maps and blocks according to the Information Mapping method
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gene/limap
