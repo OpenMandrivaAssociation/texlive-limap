@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/gene/limap
-# catalog-date 2007-01-08 23:14:30 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-limap
-Version:	20070108
-Release:	10
+Version:	2.2
+Release:	1
 Summary:	Typeset maps and blocks according to the Information Mapping method
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/gene/limap
@@ -39,12 +33,9 @@ definitions to typeset a whole document.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/limap/limap.cls
-%{_texmfdistdir}/tex/latex/limap/limap.sty
+%{_texmfdistdir}/tex/latex/limap
 #- source
-%doc %{_texmfdistdir}/source/latex/limap/Makefile
-%doc %{_texmfdistdir}/source/latex/limap/limap.dtx
-%doc %{_texmfdistdir}/source/latex/limap/limap.ins
+%doc %{_texmfdistdir}/source/latex/limap
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,17 +46,3 @@ definitions to typeset a whole document.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070108-2
-+ Revision: 753309
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070108-1
-+ Revision: 718859
-- texlive-limap
-- texlive-limap
-- texlive-limap
-- texlive-limap
-
